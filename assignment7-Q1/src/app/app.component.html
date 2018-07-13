@@ -1,0 +1,16 @@
+<div style="text-align:center">
+    <h1>Login Form </h1>
+<form [formGroup]="nForm"  class="example-form">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Enter Username" formControlName="name">
+         
+        </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+            <input matInput placeholder="Enter password" formControlName="pwd">
+           
+          </mat-form-field>
+        <br>
+        <button mat-raised-button color="primary" (click)="data(nForm.value)">Login</button>
+      </form>
+      </div>
